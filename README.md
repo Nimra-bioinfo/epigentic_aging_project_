@@ -6,6 +6,12 @@ to predict Biological Age and quantify Epigenetic Age Acceleration (EAA) caused 
 > **Note:** This project uses **simulated (synthetic) data**, not real patient data
             The results demonstrate the method only.
 
+> ## Vision
+
+Long-term goal: develop this into a research tool for studying
+epigenetic aging in shift workers. This will require validation on
+real datasets. Current version is a proof-of-concept on simulated data.
+
 ---
 
 ## Key Discoveries
@@ -23,14 +29,18 @@ to predict Biological Age and quantify Epigenetic Age Acceleration (EAA) caused 
 - **Pandas & NumPy** (Data wrangling, matrix manipulation, and synthetic CpG signal embedding)
 - **SciPy** (`stats.ttest_ind` for hypothesis testing and statistical significance)
 - **Matplotlib & Seaborn** (Publication-ready statistical plots and age regression visualizations)
-- **GEOparse** (Dynamic data retrieval from NCBI Gene Expression Omnibus)
 
 ---
 
-## Dataset Sources
+  ## Dataset
 
-- **Simulated Cohorts:** Epigenetic profiles generated across 353 CpG sites matching Horvath's Epigenetic Clock specifications.
-- **NCBI GEO Integration:** Pipeline supports direct ingestion of human DNA methylation datasets (e.g., [`GSE111520`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111520)) via the `GEOparse` interface.
+- **Simulated cohort:** 60 synthetic samples with 353 simulated CpG sites
+  (Beta-values 0 to 1), generated with NumPy. An age signal and a
+  night-shift signal were added on purpose, so results demonstrate the
+  method only and are not real biological findings.
+
+- **Future work:** apply the same pipeline to a real public methylation
+  dataset (for example from NCBI GEO).
 
 ---
 
