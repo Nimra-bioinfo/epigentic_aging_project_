@@ -3,6 +3,9 @@
 An automated computational biology and machine learning pipeline that analyzes DNA methylation profiles (CpG Beta-values) 
 to predict Biological Age and quantify Epigenetic Age Acceleration (EAA) caused by chronic sleep disruption and shift work.
 
+> **Note:** This project uses **simulated (synthetic) data**, not real patient data
+            The results demonstrate the method only.
+
 ---
 
 ## Key Discoveries
